@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPM Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="engineRPMRadio" name="variables" checked>
+  <label for="engineRPMRadio">Engine RPM</label>
+
+  <input type="radio" id="wheelRPMRadio" name="variables">
+  <label for="wheelRPMRadio">Wheel RPM</label>
+
+  <input type="radio" id="drivetraintransmissionratioRadio" name="variables">
+  <label for="drivetraintransmissionratioRadio">Drivetrain transmission ratio</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Wheel RPM</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Drivetrain transmission ratio</label>
+  <input type="number" id="v2"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
